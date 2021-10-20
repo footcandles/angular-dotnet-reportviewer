@@ -1,0 +1,7 @@
+
+<button (click)="getEmployeeReport()">Get Report</button>
+
+<div *ngIf="showReport" style="width: 60%;">
+    <ssrs-reportviewer [reportserver]="reportServer" [reporturl]="reportUrl" [language]="language" [width]="width" [height]="height" [toolbar]="toolbar">
+    </ssrs-reportviewer>
+</div>
